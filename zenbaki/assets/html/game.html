@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>ZenBaki</title>
+        <meta name="keywords" content="title, game, phaser, platform, Pello">
+        <meta name="description" content="Warchat game built with phaser">
+        <meta name="author" content="Pello Altadill">
+        <style>
+            body { background-color: #ddd; }
+        </style>
+    </head>
+    <body>
+    </body>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const background = urlParams.get('background') || '#000000';
+        document.body.style.backgroundColor = background;
+    </script>
+</html>

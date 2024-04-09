@@ -1,0 +1,201 @@
+/* Apply a flex container to the <body> to center its children */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+    margin: 0;
+    background-color: #F0EAD6;
+    font-family: 'HIRO MISAKE','Gang of Three', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: 'HIRO MISAKE';
+    src: url('../fonts/HIROMISAKERegular.woff2') format('woff2'),
+        url('../fonts/HIROMISAKERegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.title {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.title, h2 {
+    color: #f22c2e;
+    font-family: 'HIRO MISAKE','Gang of Three', Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+/* Create a two-column layout using flex */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Style the left column for the logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: #f22c2e;
+    border-radius: 50%;
+
+}
+
+.number {
+    margin-top: 15px;
+    font-size: 12em;
+    font-family: 'HIRO MISAKE','Gang of Three', Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+
+
+.floating-div {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+
+}
+
+.left {
+  top: 270px;
+  left: 30%;
+  background-image: url(../images/cloud10.png);
+  background-repeat: no-repeat;
+  min-width: 100px;
+  min-height: 60px;
+  animation: linear;
+  animation-name: moveRight;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: linear;
+  -webkit-animation-name: moveRight;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveRight {
+    0% {
+      left: 30%;
+    }
+    100% {
+      left: 40%;
+    }
+  }
+
+.right {
+  top: 70px;
+  right: 30%;
+  background-image: url(../images/cloud1.png);
+  background-repeat: no-repeat;
+  min-width: 100px;
+  min-height: 60px;
+  animation: linear;
+  animation-name: moveLeft;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+
+  -webkit-animation: linear;
+  -webkit-animation-name: moveLeft;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes moveLeft {
+    0% {
+      right: 30%;
+    }
+    100% {
+      right: 40%;
+    }
+  }
+
+.title {
+    font-family: 'Gang of Three', sans-serif;
+}
+
+
+/* Center the form in the right column */
+.form-container {
+    padding: 20px;
+
+
+    text-align: center;
+}
+
+/* Add some spacing between form elements */
+.form-container > * {
+    margin-bottom: 10px;
+}
+label {
+
+    color: rgb(239, 143, 151);
+}
+/* Style form elements */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: rgb(210, 30, 45);
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color:rgb(239, 143, 151);
+}
+
+a {
+    color:rgb(239, 143, 151);
+}
+
+.list-row {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+
+}
+
+.list {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(143, 20, 31)
+}
+
+.list-item {
+    margin: 5px 0;
+    color: rgb(239, 143, 151);
+}
+
+footer {
+    clear: both;
+    text-align: center;
+}
