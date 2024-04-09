@@ -1,0 +1,66 @@
+{
+  "name": "fate",
+  "productName": "Fate",
+  "main": "index.html",
+  "window": {
+    "title": "Fate - by Pello",
+    "width": 800,
+    "height": 600,
+    "fullscreen": false,
+    "toolbar": false,
+    "icon": "customIcon.png"
+  },
+  "version": "0.0.1",
+  "description": "Fate game",
+  "chromium-args": "--data-path='./saves/' --in-process-gpu --disable-transparency",
+  "scripts": {
+    "start": "npx webpack-cli serve -c webpack.dev.js --mode development",
+    "build": "webpack --config webpack.prod.js",
+    "test": "npm run lint && npm run unit",
+    "lint": "eslint src/**/*.js test/**/*.js --fix",
+    "unit": "mocha test --recursive --require @babel/register -r jsdom-global/register --file test/test_setup.js"
+  },
+  "dependencies": {
+    "@enable3d/phaser-extension": "0.22.0",
+    "matter-js": "0.16.1",
+    "phaser": "3.80.1",
+    "poly-decomp": "^0.3.0",
+    "three": "0.127.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-transform-runtime": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/register": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "canvas": "^2.6.1",
+    "chai": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^7.0.0",
+    "eslint": "^7.18.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "html-webpack-plugin": "^4.5.1",
+    "jsdom": "^16.4.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^8.2.1",
+    "path": "^0.12.7",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.9.0",
+    "write-file-webpack-plugin": "^4.5.1"
+  },
+  "repository": {
+    "url": "https://github.com/pxai/phaserbook"
+  },
+  "license": "MIT",
+  "keywords": [
+    "phaser",
+    "games",
+    "book",
+    "pello"
+  ]
+}
