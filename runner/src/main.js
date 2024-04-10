@@ -1,6 +1,6 @@
 import Phaser from "phaser";
-import Game from "./game";
-import GameOver from "./gameover";
+import Game from "./scenes/game";
+import GameOver from "./scenes/gameover";
 /*
 This is the main configuration file for the game.
 */
@@ -12,7 +12,7 @@ const config = {
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
   autoRound: false,
-  parent: "contenedor",
+  parent: "game-container",
   physics: {
     default: "arcade",
     arcade: {
