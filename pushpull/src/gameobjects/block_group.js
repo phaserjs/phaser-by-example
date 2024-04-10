@@ -11,7 +11,6 @@ export default class BlockGroup extends Phaser.GameObjects.Container {
     defaultVelocity = 100
   ) {
     super(scene, x, y);
-    this.scene = scene;
     this.w = +w;
     this.h = +h;
     this.id = Math.random();
