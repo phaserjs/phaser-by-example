@@ -1,5 +1,5 @@
-import BlockGroup from "./block_group";
-import Exit from "./exit";
+import BlockGroup from "../gameobjects/block_group";
+import Exit from "../gameobjects/exit";
 
 export default class Game extends Phaser.Scene {
   constructor() {
