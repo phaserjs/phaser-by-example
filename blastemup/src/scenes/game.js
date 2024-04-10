@@ -1,5 +1,5 @@
 import Phaser from "phaser";
-import Player from "./player";
+import Player from "../gameobjects/player";
 
 import {
   NEW_PLAYER,
@@ -7,7 +7,7 @@ import {
   PLAYER_DISCONNECTED,
   PLAYER_MOVED,
   PLAYER_IS_MOVING,
-} from "./status";
+} from "../status";
 
 export default class Game extends Phaser.Scene {
   constructor() {

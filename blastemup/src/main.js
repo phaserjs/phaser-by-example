@@ -1,6 +1,6 @@
 import Phaser from "phaser";
-import Game from "./game";
-import Bootloader from "./bootloader";
+import Game from "./scenes/game";
+import Bootloader from "./scenes/bootloader";
 
 const config = {
   type: Phaser.AUTO,

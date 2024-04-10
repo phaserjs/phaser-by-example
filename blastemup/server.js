@@ -12,8 +12,8 @@ app.get("/", function (request, response) {
 
 app.use("/", express.static("dist"));
 
-http.listen(5000, function () {
-  console.log("Server ready, listening on port ", 5000);
+http.listen(5001, function () {
+  console.log("Server ready, listening on port ", 5001);
 });
 
 const players = {};
