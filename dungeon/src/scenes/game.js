@@ -1,5 +1,5 @@
-import Player from "./player";
-import DungeonGenerator from "./dungeon_generator";
+import Player from "../gameobjects/player";
+import DungeonGenerator from "../gameobjects/dungeon_generator";
 
 export default class Game extends Phaser.Scene {
   constructor() {

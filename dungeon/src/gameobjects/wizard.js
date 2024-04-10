@@ -5,7 +5,6 @@ export default class Wizard extends Phaser.Physics.Matter.Sprite {
   constructor(scene, x, y, texture = "wizard", ground) {
     super(scene.matter.world, x, y, texture, 0);
     this.label = "wizard";
-    this.scene = scene;
     this.scene.add.existing(this);
     this.startX = x;
     this.direction = Phaser.Math.RND.pick([-1, 1]);

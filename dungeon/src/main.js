@@ -1,11 +1,11 @@
 import Phaser from "phaser";
-import Bootloader from "./bootloader";
-import Outro from "./outro";
-import Splash from "./splash";
-import Transition from "./transition";
-import Game from "./game";
+import Bootloader from "./scenes/bootloader";
+import Outro from "./scenes/outro";
+import Splash from "./scenes/splash";
+import Transition from "./scenes/transition";
+import Game from "./scenes/game";
 import PhaserMatterCollisionPlugin from "phaser-matter-collision-plugin";
-import { MatterGravityFixPlugin } from "./matter_gravity_fix";
+import { MatterGravityFixPlugin } from "./plugins/matter_gravity_fix";
 
 const config = {
   width: 600,
