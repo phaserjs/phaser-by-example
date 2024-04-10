@@ -1,8 +1,7 @@
 import { Scene3D, ExtendedObject3D, THREE } from "@enable3d/phaser-extension";
-import { ThreeGraphics } from "@enable3d/three-graphics";
 import { Euler } from "three";
-import BulletHell from "./bullet_hell";
-import Lightning from "./lightning";
+import BulletHell from "../gameobjects/bullet_hell";
+import Lightning from "../gameobjects/lightning";
 
 export default class Game extends Scene3D {
   constructor() {
@@ -455,7 +454,7 @@ We will create a trail as we did in other games. Generating boxes in the ship po
     this.third.physics.add.existing(trail);
     trail.body.setVelocityZ(15);
     this.tweens.add({
-      targets: trail,
+      targets: trail.scale,
       duration: 600,
       scale: { from: 1, to: 0 },
       repeat: 1,
@@ -501,7 +500,7 @@ We will create a trail as we did in other games. Generating boxes in the ship po
     trail1.body.setVelocityZ(15);
     trail2.body.setVelocityZ(15);
     this.tweens.add({
-      targets: [trail1, trail2],
+      targets: [trail1.scale, trail2.scale],
       duration: 600,
       scale: { from: 1, to: 0 },
       repeat: 1,

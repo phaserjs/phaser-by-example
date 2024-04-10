@@ -1,11 +1,11 @@
 import * as Phaser from "phaser";
 import { enable3d, Canvas } from "@enable3d/phaser-extension";
-import Bootloader from "./bootloader";
-import Outro from "./outro";
-import GameOver from "./game_over";
-import Splash from "./splash";
-import Story from "./story";
-import Game from "./game";
+import Bootloader from "./scenes/bootloader";
+import Outro from "./scenes/outro";
+import GameOver from "./scenes/game_over";
+import Splash from "./gameobjects/splash";
+import Story from "./scenes/story";
+import Game from "./scenes/game";
 
 const config = {
   type: Phaser.WEBGL,

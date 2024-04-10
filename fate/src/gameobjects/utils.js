@@ -36,20 +36,27 @@ export default class Utils {
 
     characters.forEach((character, i) => {
       timeline.add({
-        targets: character,
-        alpha: { from: 0, to: 0.5 },
-        duration: 100,
+        at: 0,
+        tween: {
+          targets: character,
+          alpha: { from: 0, to: 0.5 },
+          duration: 100,
+        },
+        
       });
     });
     timeline.add({
-      targets: ending,
-      alpha: { from: 0, to: 0.8 },
-      duration: 100,
-      repeat: 5,
-      yoyo: true,
-      onStart: () => {
-        this.typeAudio.stop();
-      },
+      at: 0,
+      tween: {
+        targets: ending,
+        alpha: { from: 0, to: 0.8 },
+        duration: 100,
+        repeat: 5,
+        yoyo: true,
+        onStart: () => {
+          this.typeAudio.stop();
+        },
+      }
     });
     this.typeAudio.play({
       mute: false,
