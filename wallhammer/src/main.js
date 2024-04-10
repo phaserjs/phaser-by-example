@@ -2,7 +2,7 @@ import Phaser from "phaser";
 import Bootloader from "./scenes/bootloader";
 import Outro from "./scenes/outro";
 import Splash from "./scenes/splash";
-import Transition from "./transition";
+import Transition from "./scenes/transition";
 import Game from "./scenes/game";
 
 const config = {

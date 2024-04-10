@@ -1,8 +1,8 @@
 import Player from "../gameobjects/player";
 import { Debris } from "../gameobjects/particle";
 import Bat from "../gameobjects/bat";
-import Zombie from "../zombie";
-import Turn from "../turn";
+import Zombie from "../gameobjects/zombie";
+import Turn from "../gameobjects/turn";
 import Coin from "../gameobjects/coin";
 import LunchBox from "../gameobjects/lunchbox";
 import Platform from "../gameobjects/platform";
