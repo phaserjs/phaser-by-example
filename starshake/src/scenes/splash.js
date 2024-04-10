@@ -1,4 +1,4 @@
-import SceneEffect from "./scene_effect";
+import SceneEffect from "../gameobjects/scene_effect";
 
 export default class Splash extends Phaser.Scene {
   constructor() {

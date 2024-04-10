@@ -14,7 +14,6 @@ class Foe extends Phaser.GameObjects.Sprite {
     this.name = name;
     this.points = TYPES[name].points;
     this.lives = TYPES[name].lives;
-    this.scene = scene;
     this.id = Math.random();
     if (this.name !== "foe2") {
       this.spawnShadow(x, y);

@@ -19,7 +19,6 @@ class Shot extends Phaser.GameObjects.PointLight {
     const { color, radius, intensity } = TYPES[type];
     super(scene, x, y, color, radius, intensity);
     this.name = "shot";
-    this.scene = scene;
     this.playerName = playerName;
     scene.add.existing(this);
     scene.physics.add.existing(this);

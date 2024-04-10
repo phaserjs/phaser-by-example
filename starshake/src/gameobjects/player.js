@@ -6,7 +6,6 @@ class Player extends Phaser.GameObjects.Sprite {
   constructor(scene, x, y, name = "player1", powerUp = "water") {
     super(scene, x, y, name);
     this.name = name;
-    this.scene = scene;
     this.spawnShadow(x, y);
     this.powerUp = powerUp;
     this.id = Math.random();

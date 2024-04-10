@@ -1,7 +1,7 @@
-import FoeGenerator from "./foe_generator";
-import Player from "./player";
-import PowerUp from "./powerup";
-import SceneEffect from "./scene_effect";
+import FoeGenerator from "../gameobjects/foe_generator";
+import Player from "../gameobjects/player";
+import PowerUp from "../gameobjects/powerup";
+import SceneEffect from "../gameobjects/scene_effect";
 
 export default class Game extends Phaser.Scene {
   constructor() {
