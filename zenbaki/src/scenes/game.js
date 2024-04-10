@@ -1,5 +1,5 @@
-import Player from "./player";
-import Chat from "./chat";
+import Player from "../gameobjects/player";
+import Chat from "../chat";
 
 export default class Game extends Phaser.Scene {
   constructor() {

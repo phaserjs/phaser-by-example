@@ -1,6 +1,6 @@
 import Phaser from "phaser";
-import Bootloader from "./bootloader";
-import Game from "./game";
+import Bootloader from "./scenes/bootloader";
+import Game from "./scenes/game";
 
 const config = {
   width: 260,

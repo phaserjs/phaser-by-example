@@ -1,4 +1,4 @@
-const tmi = require("tmi.js");
+import tmi from "tmi.js";
 
 export default class Chat {
   constructor(scene, username, password, channels) {
