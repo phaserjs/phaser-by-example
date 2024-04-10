@@ -3,7 +3,6 @@ export default class Platform extends Phaser.GameObjects.Container {
     super(scene, x, y);
     this.x = x;
     this.y = y;
-    this.scene = scene;
     this.scene.add.existing(this);
     this.scene.physics.add.existing(this);
     this.body.setAllowGravity(false);

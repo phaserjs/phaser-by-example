@@ -1,9 +1,9 @@
 import Phaser from "phaser";
-import Bootloader from "./bootloader";
-import Outro from "./outro";
-import Splash from "./splash";
+import Bootloader from "./scenes/bootloader";
+import Outro from "./scenes/outro";
+import Splash from "./scenes/splash";
 import Transition from "./transition";
-import Game from "./game";
+import Game from "./scenes/game";
 
 const config = {
   width: 1000,

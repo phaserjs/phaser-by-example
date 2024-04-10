@@ -1,7 +1,6 @@
 class Blow extends Phaser.GameObjects.Rectangle {
   constructor(scene, x, y, width = 32, height = 32, type = "") {
     super(scene, x, y, width, height, 0xffffff);
-    this.scene = scene;
     this.type = type;
     this.y = y;
     scene.add.existing(this);

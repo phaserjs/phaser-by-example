@@ -1,4 +1,4 @@
-import { Debris } from "./particle";
+import { Debris } from "../gameobjects/particle";
 
 export default class Splash extends Phaser.Scene {
   constructor() {

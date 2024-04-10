@@ -7,7 +7,6 @@ export class Smoke extends Phaser.GameObjects.Rectangle {
     height = height || Phaser.Math.Between(10, 25);
     super(scene, x, y, width, height, color);
     scene.add.existing(this);
-    this.scene = scene;
     this.color = color;
     this.init();
   }

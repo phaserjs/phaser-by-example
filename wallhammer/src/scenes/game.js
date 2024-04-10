@@ -1,11 +1,11 @@
-import Player from "./player";
-import { Debris } from "./particle";
-import Bat from "./bat";
-import Zombie from "./zombie";
-import Turn from "./turn";
-import Coin from "./coin";
-import LunchBox from "./lunchbox";
-import Platform from "./platform";
+import Player from "../gameobjects/player";
+import { Debris } from "../gameobjects/particle";
+import Bat from "../gameobjects/bat";
+import Zombie from "../zombie";
+import Turn from "../turn";
+import Coin from "../gameobjects/coin";
+import LunchBox from "../gameobjects/lunchbox";
+import Platform from "../gameobjects/platform";
 import Phaser from "phaser";
 
 export default class Game extends Phaser.Scene {
