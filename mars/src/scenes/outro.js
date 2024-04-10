@@ -1,4 +1,4 @@
-import Utils from "./utils";
+import Utils from "../gameobjects/utils";
 
 export default class Outro extends Phaser.Scene {
   constructor() {

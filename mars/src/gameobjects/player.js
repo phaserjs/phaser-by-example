@@ -3,7 +3,6 @@ import Step from "./step";
 export default class Player extends Phaser.GameObjects.Sprite {
   constructor(scene, x, y, oxygen = 100) {
     super(scene, x, y, "player");
-    this.scene = scene;
     this.setOrigin(0);
     this.setScale(1);
     this.scene.add.existing(this);

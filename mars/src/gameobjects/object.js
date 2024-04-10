@@ -4,7 +4,6 @@ import Braun from "./braun";
 export default class Object extends Phaser.GameObjects.Rectangle {
   constructor(scene, x, y, type, description, extra = "") {
     super(scene, x, y, 64 * 3, 64 * 3);
-    this.scene = scene;
     this.setOrigin(0);
     this.type = type;
     this.description = description;

@@ -4,7 +4,6 @@ export default class Braun extends Phaser.GameObjects.Sprite {
     this.name = "body";
     this.setOrigin(0);
     this.rotation = 1.6;
-    this.scene = scene;
     scene.add.existing(this);
   }
 }

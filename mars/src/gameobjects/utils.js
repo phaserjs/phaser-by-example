@@ -34,7 +34,7 @@ This is the typeText method. It will create a bitmap text for each character in 
       .rectangle(x - 335 + line * 25, y + 25 + jump * size, 25, 5, tint)
       .setOrigin(0.5)
       .setAlpha(0);
-    const timeline = this.scene.tweens.createTimeline();
+    const timeline = this.scene.tweens.timeline();
     this.typeAudio = this.scene.sound.add("type");
 
     characters.forEach((character, i) => {

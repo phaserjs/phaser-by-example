@@ -6,7 +6,6 @@ export default class Drone extends Phaser.GameObjects.Sprite {
     this.name = "drone";
     this.setScale(1);
     this.grid = grid;
-    this.scene = scene;
     scene.add.existing(this);
     scene.physics.add.existing(this);
     this.body.setAllowGravity(false);

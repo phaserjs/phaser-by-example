@@ -1,4 +1,4 @@
-import { ShotSmoke } from "./particle";
+import { ShotSmoke } from "../gameobjects/particle";
 
 export default class Splash extends Phaser.Scene {
   constructor() {

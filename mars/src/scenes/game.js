@@ -1,6 +1,6 @@
-import Player from "./player";
-import Object from "./object";
-import Drone from "./drone";
+import Player from "../gameobjects/player";
+import Object from "../gameobjects/object";
+import Drone from "../gameobjects/drone";
 import HorrifiPostFx from "phaser3-rex-plugins/plugins/horrifipipeline.js";
 
 export default class Game extends Phaser.Scene {
