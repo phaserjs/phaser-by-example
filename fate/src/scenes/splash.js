@@ -1,5 +1,5 @@
 import { Scene3D } from "@enable3d/phaser-extension";
-import Utils from "./utils";
+import Utils from "../gameobjects/utils";
 
 export default class Splash extends Scene3D {
   constructor() {
