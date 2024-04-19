@@ -111,7 +111,7 @@ export default class Drone extends Phaser.GameObjects.Sprite {
         });
       }
 
-      this.moveTimeline = this.scene.tweens.timeline({
+      this.moveTimeline = this.scene.add.timeline({
         tweens: tweens,
         onComplete: () => {
           this.delayedMove.remove();

@@ -34,26 +34,34 @@ This is the typeText method. It will create a bitmap text for each character in 
       .rectangle(x - 335 + line * 25, y + 25 + jump * size, 25, 5, tint)
       .setOrigin(0.5)
       .setAlpha(0);
-    const timeline = this.scene.tweens.timeline();
+    const timeline = this.scene.add.timeline();
     this.typeAudio = this.scene.sound.add("type");
 
     characters.forEach((character, i) => {
       timeline.add({
-        targets: character,
-        alpha: { from: 0, to: 0.5 },
-        duration: 100,
+        at: 0,
+        tween: {
+          targets: character,
+          alpha: { from: 0, to: 0.5 },
+          duration: 100,
+        },
       });
     });
+
     timeline.add({
-      targets: ending,
-      alpha: { from: 0, to: 0.8 },
-      duration: 100,
-      repeat: 5,
-      yoyo: true,
-      onStart: () => {
-        this.typeAudio.stop();
+      at: 100,
+      tween: {
+        targets: ending,
+        alpha: { from: 0, to: 0.8 },
+        duration: 100,
+        repeat: 5,
+        yoyo: true,
+        onStart: () => {
+          this.typeAudio.stop();
+        },
       },
     });
+
     this.typeAudio.play({
       mute: false,
       volume: 1,
