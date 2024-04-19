@@ -1,6 +1,6 @@
 {
-  "name": "generic",
-  "productName": "Generic",
+  "name": "zenbaki",
+  "productName": "Zenbaki",
   "main": "index.html",
   "window": {
     "title": "Generic - by Pello",
@@ -26,7 +26,7 @@
     "vite": "^5.1.4"
   },
   "repository": {
-    "url": "https://github.com/pxai/phaserbook"
+    "url": "https://github.com/phaserjs/phaser-by-example"
   },
   "license": "MIT",
   "keywords": [

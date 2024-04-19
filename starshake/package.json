@@ -1,6 +1,6 @@
 {
-  "name": "generic",
-  "productName": "Generic",
+  "name": "starshake",
+  "productName": "Starshake",
   "main": "index.html",
   "type": "module",
   "window": {
@@ -15,7 +15,7 @@
   "description": "Generic game for jam",
 
   "repository": {
-    "url": "https://github.com/pxai/phaserbook"
+    "url": "https://github.com/phaserjs/phaser-by-example"
   },
   "license": "MIT",
   "keywords": [

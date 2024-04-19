@@ -1,5 +1,6 @@
 {
-  "name": "starshipped",
+  "name": "blastemup",
+  "productName": "Blastemup",
   "version": "0.0.1",
   "description": "Starshipped phaser game",
   "main": "server.js",
@@ -18,7 +19,7 @@
       "vite": "^5.1.4"
   },
   "repository": {
-    "url": "https://github.com/pxai/phaserbook"
+    "url": "https://github.com/phaserjs/phaser-by-example"
   },
   "license": "MIT",
   "keywords": [
