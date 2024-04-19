@@ -14,7 +14,7 @@
   "version": "0.0.1",
   "description": "Generic game for jam",
   "repository": {
-    "url": "https://github.com/pxai/phaserbook"
+    "url": "https://github.com/phaserjs/phaser-by-example"
   },
   "license": "MIT",
   "keywords": [

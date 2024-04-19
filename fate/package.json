@@ -29,7 +29,7 @@
     "three": "0.156.1"
   },
   "repository": {
-    "url": "https://github.com/pxai/phaserbook"
+    "url": "https://github.com/phaserjs/phaser-by-example"
   },
   "license": "MIT",
   "keywords": [
