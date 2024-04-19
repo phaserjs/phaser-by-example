@@ -2,7 +2,7 @@
 
 ![alt text](Phaser-by-Example.jpg "Phaser by Example Cover")
 
-This repo is including all the 10 games written in the Phaser By Example book. All the games use Vite for bundling.
+This repo is including all the _9_ games written in the Phaser By Example book. All the games use Vite for bundling.
 
 #### Installation:
 
