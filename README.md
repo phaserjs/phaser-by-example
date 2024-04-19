@@ -4,6 +4,8 @@
 
 This repo is including all the _9_ games written in the Phaser By Example book. All the games use Vite for bundling.
 
+[Get the book here!](https://phaser.io/news/2024/04/phaser-by-example-book)
+
 #### Installation:
 
 ```bash
