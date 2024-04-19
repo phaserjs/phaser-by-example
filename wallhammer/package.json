@@ -1,6 +1,6 @@
 {
-  "name": "generic",
-  "productName": "Generic",
+  "name": "wallhammer",
+  "productName": "Wallhammer",
   "main": "index.html",
   "type": "module",
   "window": {

@@ -1,5 +1,6 @@
 {
-  "name": "starshipped",
+  "name": "blastemup",
+  "productName": "Blastemup",
   "version": "0.0.1",
   "description": "Starshipped phaser game",
   "main": "server.js",

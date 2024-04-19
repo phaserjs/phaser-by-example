@@ -1,6 +1,6 @@
 {
-  "name": "cell",
-  "productName": "Cell",
+  "name": "pushpull",
+  "productName": "pushpull",
   "main": "index.html",
   "type": "module",
   "window": {

@@ -1,6 +1,6 @@
 {
-  "name": "generic",
-  "productName": "Generic",
+  "name": "runner",
+  "productName": "Runner",
   "main": "index.html",
   "type": "module",
   "window": {

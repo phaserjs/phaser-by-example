@@ -1,6 +1,6 @@
 {
-  "name": "matter game",
-  "productName": "Matter",
+  "name": "dungeon",
+  "productName": "Dungeon",
   "main": "index.html",
   "type": "module",
   "window": {

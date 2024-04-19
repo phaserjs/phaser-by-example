@@ -1,6 +1,6 @@
 {
-  "name": "generic",
-  "productName": "Generic",
+  "name": "starshake",
+  "productName": "Starshake",
   "main": "index.html",
   "type": "module",
   "window": {
