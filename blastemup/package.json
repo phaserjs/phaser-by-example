@@ -2,7 +2,7 @@
   "name": "blastemup",
   "productName": "Blastemup",
   "version": "0.0.1",
-  "description": "Starshipped phaser game",
+  "description": "Game for Phaser by Example",
   "main": "server.js",
   "scripts": {
     "dev": "vite --config vite/config.dev.mjs",

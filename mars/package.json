@@ -12,7 +12,7 @@
     "icon": "customIcon.png"
   },
   "version": "0.0.1",
-  "description": "Generic game for jam",
+  "description": "Game for Phaser by Example",
   "repository": {
     "url": "https://github.com/phaserjs/phaser-by-example"
   },

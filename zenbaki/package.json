@@ -11,7 +11,7 @@
     "icon": "customIcon.png"
   },
   "version": "0.0.1",
-  "description": "Generic game for jam",
+  "description": "Game for Phaser by Example",
   "scripts": {
     "dev": "vite --config vite/config.dev.mjs",
     "build": "vite build --config vite/config.prod.mjs"
