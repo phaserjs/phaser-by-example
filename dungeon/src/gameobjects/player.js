@@ -21,11 +21,13 @@ export default class Player {
     The init method is called from the constructor and in this case, it has several jobs. This is just a conventional class that contains a compound body: it consists of different bodies for the player, and we need to add them to the Matter world. We also need to add the player sprite to the scene and set up the animations. Finally, we need to add the colliders and events that will be used to control the player. If you set the debug to true you'll see the different bodies that make up the player. The ones on the sides it's used to detect collisions with walls and be able to climb up.
   */
   init(x, y) {
-    // Before Matter's update, reset our record of what surfaces the player is touching.
+    // Before Matter's update, 
+    // reset our record of what surfaces the player is touching.
     this.scene.matter.world.on("beforeupdate", this.resetTouching, this);
     this.sprite = this.scene.matter.add.sprite(0, 0, "player", 0);
 
-    const { Body, Bodies } = Phaser.Physics.Matter.Matter; // Native Matter modules
+    // Native Matter modules
+    const { Body, Bodies } = Phaser.Physics.Matter.Matter; 
     const { width: w, height: h } = this.sprite;
 
     const mainBody = Bodies.rectangle(0, 5, w - 14, h - 10, {
@@ -50,7 +52,8 @@ export default class Player {
     });
     this.sprite
       .setExistingBody(compoundBody)
-      .setFixedRotation() // Sets inertia to infinity so the player can't rotate
+      .setFixedRotation() 
+      // Sets inertia to infinity so the player can't rotate
       .setPosition(x, y);
 
     this.addEvents();
@@ -138,7 +141,8 @@ export default class Player {
     This is the method that is called when the player collides with something. We use it to detect collisions with the walls and the ground. We also use it to detect collisions with the sensors that we added to the player. This is used to detect collisions with the walls and the ground.
   */
   onSensorCollide({ bodyA, bodyB, pair }) {
-    if (bodyB.isSensor) return; // We only care about collisions with physical objects
+    // We only care about collisions with physical objects
+    if (bodyB.isSensor) return; 
     if (bodyA === this.sensors.left) {
       this.friction();
       this.onWall = true;

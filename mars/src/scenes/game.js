@@ -35,7 +35,8 @@ export default class Game extends Phaser.Scene {
     this.addPlayer();
     this.addOxygen();
 
-    // this.input.keyboard.on("keydown-ENTER", () => this.skipThis(), this); // for testing
+    // this.input.keyboard.on("keydown-ENTER", 
+    // () => this.skipThis(), this); // for testing
     this.cameras.main.startFollow(this.player, true, 0.05, 0.05, 0, 0);
     this.loadAudios();
     this.addEffects();

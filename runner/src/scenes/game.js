@@ -36,21 +36,16 @@ export default class Game extends Phaser.Scene {
     this.score = 0;
   }
 
-  /*
-    Here we do several things.
+/*
+Here we do several things.
 
-    - We use the `create` method to initialize the game.
-
-    - We set some variables to store width and height that we may need later.,
-
-    - We set the background color, and create the player, the obstacles, and the coins.
-
-    - We also create the keyboard input to listen to the space key.
-
-    - Also, we add a collider between the player and the obstacles and an overlap
-
-    between the player and the coins. The key part there is to set a function that will be called when the player overlaps with a coin or hits an obstacle.
-    */
+- We use the `create` method to initialize the game.
+- We set some variables to store width and height that we may need later.,
+- We set the background color, and create the player, the obstacles, and the coins.
+- We also create the keyboard input to listen to the space key.
+- Also, we add a collider between the player and the obstacles and an overlap
+between the player and the coins. The key part there is to set a function that will be called when the player overlaps with a coin or hits an obstacle.
+*/
   create() {
     this.width = this.sys.game.config.width;
     this.height = this.sys.game.config.height;
@@ -97,13 +92,13 @@ export default class Game extends Phaser.Scene {
     this.playMusic();
 
     /*
-        We use the `pointerdown` event to listen to the mouse click or touch event.
-        */
+    We use the `pointerdown` event to listen to the mouse click or touch event.
+    */
     this.input.on("pointerdown", (pointer) => this.jump(), this);
 
     /*
-        We use `updateScoreEvent` to update the score every 100ms so the player can see the score increasing as long as he survives.
-        */
+    We use `updateScoreEvent` to update the score every 100ms so the player can see the score increasing as long as he survives.
+    */
     this.updateScoreEvent = this.time.addEvent({
       delay: 100,
       callback: () => this.updateScore(),
@@ -112,30 +107,30 @@ export default class Game extends Phaser.Scene {
     });
   }
 
-  /*
-    This method is called when the player hits an obstacle. We stop the updateScoreEvent so the score doesn't increase anymore.
+/*
+This method is called when the player hits an obstacle. We stop the updateScoreEvent so the score doesn't increase anymore.
 
-    And obviously, we finish the scene.
-    */
+And obviously, we finish the scene.
+*/
   hitObstacle(player, obstacle) {
     this.updateScoreEvent.destroy();
     this.finishScene();
   }
 
-  /*
-    This method is called when the player hits a coin. We play a sound, update the score, and destroy the coin.
-    */
+/*
+This method is called when the player hits a coin. We play a sound, update the score, and destroy the coin.
+*/
   hitCoin(player, coin) {
     this.playAudio("coin");
     this.updateScore(1000);
     coin.destroy();
   }
 
-  /*
-    We use this `loadAudios` method to load all the audio files that we need for the game.
+/*
+We use this `loadAudios` method to load all the audio files that we need for the game.
 
-    Then we'll play them using the `playAudio` method.
-    */
+Then we'll play them using the `playAudio` method.
+*/
   loadAudios() {
     this.audios = {
       jump: this.sound.add("jump"),
@@ -149,8 +144,8 @@ export default class Game extends Phaser.Scene {
   }
 
   /*
-    This method is specific to the music. We use it to play the theme music in a loop.
-    */
+  This method is specific to the music. We use it to play the theme music in a loop.
+  */
   playMusic(theme = "theme") {
     this.theme = this.sound.add(theme);
     this.theme.stop();
@@ -165,11 +160,11 @@ export default class Game extends Phaser.Scene {
     });
   }
 
-  /*
-    This is the game loop. The function is called every frame.
+/*
+This is the game loop. The function is called every frame.
 
-    Here is where we can check if a key was pressed or the situation of the player to act accordingly. We use the `update` method to check if the player pressed the space key.
-    */
+Here is where we can check if a key was pressed or the situation of the player to act accordingly. We use the `update` method to check if the player pressed the space key.
+*/
   update() {
     if (Phaser.Input.Keyboard.JustDown(this.SPACE)) {
       this.jump();
@@ -180,11 +175,11 @@ export default class Game extends Phaser.Scene {
     }
   }
 
-  /*
-    This is the method that we use to make the player jump. A jump is just a velocity in the Y-axis. Gravity will do the rest.
+/*
+This is the method that we use to make the player jump. A jump is just a velocity in the Y-axis. Gravity will do the rest.
 
-    We also play a jumping sound and we add a tween to rotate the player while jumping.
-    */
+We also play a jumping sound and we add a tween to rotate the player while jumping.
+*/
   jump() {
     if (!this.player.body.blocked.down) return;
     this.player.body.setVelocityY(-300);
@@ -198,18 +193,15 @@ export default class Game extends Phaser.Scene {
     });
   }
 
-  /*
-    What should we do when we finish the game scene?
+/*
+What should we do when we finish the game scene?
 
-    - Stop the theme music
+- Stop the theme music
+- Play the dead sound
+- Set the score in the registry to show it in the `gameover` scene.
+- Start the `gameover` scene.
 
-    - Play the dead sound
-
-    - Set the score in the registry to show it in the `gameover` scene.
-
-    - Start the `gameover` scene.
-
-    */
+*/
   finishScene() {
     this.theme.stop();
     this.playAudio("dead");
@@ -217,9 +209,9 @@ export default class Game extends Phaser.Scene {
     this.scene.start("gameover");
   }
 
-  /*
-    This method is called every 100ms and it is used to update the score and show it on the screen.
-    */
+/*
+This method is called every 100ms and it is used to update the score and show it on the screen.
+*/
   updateScore(points = 1) {
     this.score += points;
     this.scoreText.setText(this.score);

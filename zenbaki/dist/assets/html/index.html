@@ -29,11 +29,15 @@
         </header>
         <form action="game.html">
             <div><label for="channel">Channel</label></div>
-            <div><input type="text" name="channel" id="channel" value="devdiaries"></div>
+            <div>
+              <input type="text" name="channel" 
+              id="channel" value="devdiaries"></div>
             <div><label for="background">Background Color</label></div>
-            <div><input type="color" name="background" id="background", value = '#00b140'></div>
+            <div><input type="color" name="background" 
+              id="background", value = '#00b140'></div>
             <div><label for="foreground">Foreground Color</label></div>
-            <div><input type="color" name="foreground" id="foreground", value = '#F0EAD6'></div>
+            <div><input type="color" name="foreground" 
+              id="foreground", value = '#F0EAD6'></div>
             <br />
             <div><input type="submit", value = 'PLAY'></div>
         </form>
@@ -62,7 +66,9 @@
         const listBlock = document.getElementById('listBlock');
 
         function toggleList() {
-            listBlock.style.display = listBlock.style.display === 'none'|| listBlock.style.display !== 'flex' ? 'flex' : 'none';
+            listBlock.style.display = 
+            listBlock.style.display === 'none' || 
+            listBlock.style.display !== 'flex' ? 'flex' : 'none';
         }
 
     </script>
