@@ -93,7 +93,6 @@ class Obstacle extends Phaser.GameObjects.Rectangle {
     scene.add.existing(this);
     scene.physics.add.existing(this);
     this.body.setAllowGravity(false);
-    const alpha = 1 / Phaser.Math.Between(1, 3);
 
     this.init();
   }
@@ -121,7 +120,6 @@ class Coin extends Phaser.GameObjects.Sprite {
     scene.add.existing(this);
     scene.physics.add.existing(this);
     this.body.setAllowGravity(false);
-    const alpha = 1 / Phaser.Math.Between(1, 3);
 
     this.init();
   }
