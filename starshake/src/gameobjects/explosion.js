@@ -32,7 +32,11 @@ class Explosion {
     this.scene.tweens.add({
       targets: this.lights,
       duration: Phaser.Math.Between(600, 1000),
-      scale: { from: 1, to: 0 },
+      radius: { from: this.radius * 3, to: 0 },
+      ease: "Quad.easeOut",
+      onComplete: () => {
+        this.lights.forEach((light) => light.destroy());
+      },
     });
   }
 }
