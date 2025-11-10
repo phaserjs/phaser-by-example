@@ -16,6 +16,7 @@ const config = {
     width: 1280,
     height: 720,
   },
+  parent: "game-container",
   scene: [Bootloader, Story, Splash, Game, Outro, GameOver],
   ...Canvas(),
 };

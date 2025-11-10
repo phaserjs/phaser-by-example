@@ -12,6 +12,7 @@ const config = {
     width: 868,
     height: 800,
   },
+  parent: "game-container",
   physics: {
     default: "arcade",
     arcade: {

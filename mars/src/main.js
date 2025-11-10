@@ -1,9 +1,9 @@
 import Phaser from "phaser";
 import Bootloader from "./scenes/bootloader";
+import Game from "./scenes/game";
 import Outro from "./scenes/outro";
 import Splash from "./scenes/splash";
 import Transition from "./scenes/transition";
-import Game from "./scenes/game";
 
 const config = {
   width: 800,
@@ -13,7 +13,7 @@ const config = {
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
   autoRound: false,
-  parent: "contenedor",
+  parent: "game-container",
   physics: {
     default: "arcade",
     arcade: {
